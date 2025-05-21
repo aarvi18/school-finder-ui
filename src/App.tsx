@@ -1,10 +1,14 @@
+import { Navbar } from "./components/navbar"
 
 function App() {
 
   return (
-    <main>
-      <h1>Hello!</h1>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <h1>Hello!</h1>
+      </main>
+    </>
   )
 }
 
