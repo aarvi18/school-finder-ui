@@ -1,21 +1,23 @@
-import { Plus } from "lucide-react";
+import { ChevronDown, Plus } from "lucide-react";
 import { IconText } from "../../ui/others/IconText";
 import { SearchBar } from "../searchbar/SearchBar";
 import { GridListToggle } from "./GridListToggle";
+import { TextIcon } from "../../ui/others/TextIcon";
 
 export const SearchPanel = () => {
-
     return (
-        <main className="flex items-center justify-around p-4 gap-4 bg-white border-b border-gray-200">
+        <main className="flex flex-wrap gap-1 justify-around">
             <section className="flex-1">
                 <SearchBar />
             </section>
 
-            <section className="flex gap-2">
+            <section className="flex flex-wrap gap-1">
                 <GridListToggle />
-                <IconText icon={<Plus className="w-5 h-5" />} text="Manage Attributes" />
+                <IconText icon={<Plus className="w-4 h-4" />} text="Manage Attributes" />
+                <TextIcon icon={<ChevronDown className="w-4 h-4" />} text="Filter" />
+                <TextIcon icon={<ChevronDown className="w-4 h-4" />} text="Sort" />
             </section>
         </main>
-
     );
 };
+

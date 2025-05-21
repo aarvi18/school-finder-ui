@@ -18,23 +18,23 @@ export const GridListToggle = ({
     };
 
     return (
-        <div className="inline-flex border border-gray-300 rounded-md overflow-hidden bg-white">
+        <div className="inline-flex border border-[var(--border)] rounded-md overflow-hidden bg-white">
             <button
                 aria-label="Grid view"
                 onClick={() => toggleView("grid")}
-                className={`p-2 flex items-center justify-center border-r border-gray-300 ${view === "grid" ? "bg-black text-white" : "text-gray-600"
+                className={`p-2 flex items-center justify-center border-r border-[var(--border)] ${view === "grid" ? "bg-[var(--light-gray)] text-[var(--black)]" : "text-gray-600"
                     }`}
             >
-                <Grid className="h-5 w-5" />
+                <Grid className="h-4 w-4" />
             </button>
 
             <button
                 aria-label="List view"
                 onClick={() => toggleView("list")}
-                className={`p-2 flex items-center justify-center ${view === "list" ? "bg-black text-white" : "text-gray-600"
+                className={`p-2 flex items-center justify-center ${view === "list" ? "bg-[var(--light-gray)] text-[var(--black)]" : "text-gray-600"
                     }`}
             >
-                <List className="h-5 w-5" />
+                <List className="h-4 w-4" />
             </button>
         </div>
     );

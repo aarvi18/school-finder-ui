@@ -4,11 +4,11 @@ export const Breadcrumb = () => {
     return (
         <nav className="text-sm py-2" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-1">
-                <li className="flex items-center text-gray-600">
+                <li className="flex items-center text-xs text-[var(--text-secondary)]">
                     Home
-                    <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />
+                    <ChevronRight className="mx-1 h-3 w-3 text-[var(--text-secondary)]" />
                 </li>
-                <li className="font-medium">School finder</li>
+                <li className="text-xs font-medium">School finder</li>
             </ol>
         </nav>
     );
